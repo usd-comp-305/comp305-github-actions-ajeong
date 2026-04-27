@@ -24,4 +24,9 @@ public class StringUtilsTest {
     void ReverseSingleLetter() {
         assertEquals("a", StringUtils.reverseString("a"));
     }
+
+    @Test
+    void testReverseEmptyString() {
+        assertEquals("", StringUtils.reverseString(""));
+    }
 }
